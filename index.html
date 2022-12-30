@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+</head>
+<style>
+    table, th, td {
+        border: 2px solid blue;
+        text-align: center;
+    }
+    table {
+        background-color: gold;
+        border-collapse: collapse;
+    }
+    td:hover {
+        background-color: aqua;
+        cursor: pointer;
+    }
+    th, td {
+        padding: 10px;
+    }
+</style>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="2">IPHONE</th>
+            <th colspan="2" rowspan="7" style="background-color: white; border: 0px">MOBLIE CLASS</th>
+            <th colspan="2">NOKIA</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="iphone.checkMobile()">KIEM TRA TRANG THAI</button>
+            </td>
+            <td colspan="2">
+                <button onclick="nokia.checkMobile()">KIEM TRA TRANG THAI</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="iphone.onMobile()">BAT DIEN THOAI</button>
+            </td>
+            <td>
+                <button onclick="iphone.offMobile()">TAT DIEN THOAI</button>
+            </td>
+            <td>
+                <button onclick="nokia.onMobile()">BAT DIEN THOAI</button>
+            </td>
+            <td>
+                <button onclick="nokia.offMobile()">TAT DIEN THOAI</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="iphone.charge()">SAC PIN</button>
+            </td>
+            <td colspan="2">
+                <button onclick="nokia.charge()">SAC PIN</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="iphone.textMessenger()">SOAN TIN NHAN</button>
+            </td>
+            <td>
+                <button onclick="iphone.sendMessenger()">GUI TIN NHAN</button>
+            </td>
+            <td>
+                <button onclick="nokia.textMessenger()">SOAN TIN NHAN</button>
+            </td>
+            <td>
+                <button onclick="nokia.sendMessenger()">GUI TIN NHAN</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="iphone.showmemoryReceive()">HOP THU DEN</button>
+            </td>
+            <td>
+                <button onclick="iphone.showMemorySent()">HOP THU DI</button>
+            </td>
+            <td>
+                <button onclick="nokia.showmemoryReceive()">HOP THU DEN</button>
+            </td>
+            <td>
+                <button onclick="nokia.showMemorySent()">HOP THU DI</button>
+            </td>
+        </tr>
+    </table>
+    <script src="mobile.js"></script>
+</body>
+</html>
